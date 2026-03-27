@@ -1,5 +1,5 @@
-#ifndef RESERVATIONSYSTEM.HPP
-#define RESERVATIONSYSTEM.HPP
+#ifndef RESERVATIONSYSTEM_HPP
+#define RESERVATIONSYSTEM_HPP
 
 #include <string>
 #include "ReservationRequest.hpp"
@@ -29,7 +29,7 @@ public:
     bool timeconflict(Reservation, ReservationRequest);
     bool reserve(ReservationRequest request);
     bool cancel(std::string course_name);
-
+    int show_day(std::string day);
     void printSchedule();
 };
 
