@@ -3,17 +3,18 @@
 
 #include <string>
 
-class ReservationRequest {
+// Representa uma solicitação de reserva de sala feita pelo usuário
+class ReservationRequest
+{
 
 private:
-    std::string course_name;
-    std::string weekday;
-    int start_hour;
-    int end_hour;
-    int student_count;
+    std::string course_name; // nome da disciplina
+    std::string weekday;     // dia da semana
+    int start_hour;          // hora de início
+    int end_hour;            // hora de término
+    int student_count;       // número de alunos
 
 public:
-
     ReservationRequest(std::string course_name, std::string weekday, int start_hour, int end_hour, int student_count);
     ~ReservationRequest();
 

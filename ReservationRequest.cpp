@@ -1,6 +1,8 @@
 #include "ReservationRequest.hpp"
 
-ReservationRequest::ReservationRequest(std::string course_name, std::string weekday, int start_hour, int end_hour, int student_count) {
+// Inicializa a solicitação de reserva com os dados fornecidos
+ReservationRequest::ReservationRequest(std::string course_name, std::string weekday, int start_hour, int end_hour, int student_count)
+{
     this->course_name = course_name;
     this->weekday = weekday;
     this->start_hour = start_hour;
@@ -8,25 +10,31 @@ ReservationRequest::ReservationRequest(std::string course_name, std::string week
     this->student_count = student_count;
 }
 
-ReservationRequest::~ReservationRequest() {
+ReservationRequest::~ReservationRequest()
+{
 }
 
-int ReservationRequest::getStartHour(){
+int ReservationRequest::getStartHour()
+{
     return start_hour;
 }
 
- int ReservationRequest::getEndHour(){
+int ReservationRequest::getEndHour()
+{
     return end_hour;
- }
+}
 
- int ReservationRequest::getStudentCount(){
+int ReservationRequest::getStudentCount()
+{
     return student_count;
- }
+}
 
-std::string ReservationRequest::getCourseName(){
+std::string ReservationRequest::getCourseName()
+{
     return course_name;
- }
+}
 
-std::string ReservationRequest::getWeekday(){
+std::string ReservationRequest::getWeekday()
+{
     return weekday;
- }
+}
