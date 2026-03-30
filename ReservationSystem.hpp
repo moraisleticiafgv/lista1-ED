@@ -7,21 +7,20 @@
 // Representa uma reserva armazenada internamente no sistema
 struct Reservation
 {
-    std::string course_name; 
-    std::string weekday;    
-    int start_hour;          
-    int end_hour;            
-    int student_count;      
+    std::string course_name;
+    std::string weekday;
+    int start_hour;
+    int end_hour;
+    int student_count;
 };
 
 // Gerencia as reservas de salas de aula durante a semana
 class ReservationSystem
 {
-
 private:
-    int room_count;            // número de salas
-    int *room_capacities;      // capacidade máxima de cada sala
-    int *reservation_count;    // número de reservas atuais em cada sala
+    int room_count;             // número de salas
+    int *room_capacities;       // capacidade máxima de cada sala
+    int *reservation_count;     // número de reservas atuais em cada sala
     Reservation **reservations; // array bidimensional de reservas por sala
 
 public:
